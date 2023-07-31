@@ -1,0 +1,865 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #F6F6F6;
+    /* overflow: hidden; */
+}
+
+/* this is a template design */
+.template {
+    display: grid;
+    grid-template-areas:
+        'header header header header'
+        'sidenav section section section '
+        'sidenav section section section';
+}
+
+.header {
+    grid-area: header;
+}
+
+.sidenav {
+    grid-area: sidenav;
+}
+
+.section {
+
+    grid-area: section;
+}
+
+/* this is a header  up to " sign a"*/
+
+.logo {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/JioSaavn_Logo.svg/320px-JioSaavn_Logo.svg.png);
+    height: 44px;
+    /* width: 145px; */
+    background-size: cover;
+    padding-left: 154px;
+    margin-top: 9px;
+    margin-left: 7px;
+    /* border: 2px solid red; */
+}
+
+
+
+header {
+    /* display: block; */
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+    /* overflow-x: hidden; */
+    /* overflow-y: hidden; */
+    /* z-index: 1; */
+    /* position: fixed; */
+    height: 54px;
+    border-bottom: 0.3px solid rgba(179, 179, 179, 0.733);
+    
+
+}
+
+.top {
+    display: flex;
+    background-color: #F9F9F9;
+}
+
+.navbar {
+    /* background-color: #2BC5B4; */
+    display: flex;
+}
+
+.navbar a:hover{
+    border-bottom: 2px solid black;
+  
+    border-bottom-style: ridge;
+}
+
+.navbar a {
+    
+    color: #3e3e3e;
+    padding: 16px 14px 0px;
+    text-decoration: none;
+    font-size: 17px;
+    padding-top: 22px;
+}
+
+.search input {
+    text-align: center;
+    width: 567px;
+    padding: 11px 22px 14px;
+    border-radius: 30px;
+    border: 2px solid #f0f0f0;
+    margin-top: 12px;
+    background-color: white;
+    margin: 6px 60px 4px;
+
+}
+
+
+
+select {
+    background-color: #F6F6F6;
+    color: #3e3e3e;
+    font-size: 14px;
+    font-weight: 700;
+    padding-bottom: 0px;
+    border: none;
+    /* margin-left: 692px; */
+}
+
+.sign {
+    display: flex;
+    float: right;
+    margin-left: 8px;
+}
+
+.sign a {
+    text-decoration: none;
+    color: #3e3e3e;
+    padding: 10px;
+    padding-top: 21px;
+
+}
+
+
+
+
+.sign a:hover{
+    
+    border-bottom: 2px solid black;
+    
+    
+}
+
+/* This is a sidenav up to .plalist  */
+
+.sidenav {
+
+    height: 200%;
+    /* Full-height: remove this if you want "auto" height */
+    width: 230px;
+    /* Set the width of the sidebar */
+    position: fixed;
+    /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1;
+    /*Stay on top */
+    top: 61px;
+    /* Stay at the top */
+    left: 0;
+    /*background-color: ;  Black */
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 20px;
+    background-color: #F6F6F6;
+}
+
+H5 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 40px;
+    color: #7b849b;
+}
+
+.OPT1 i {
+    color: #494343;
+    font-size: 20px;
+    margin-right: 6px;
+
+}
+
+.OPT1 {
+    cursor: pointer;
+}
+
+.OPT1 {
+    color: #5f5959;
+    font-size: 14px;
+    padding: 10px 0px;
+    padding-left: 40px;
+}
+
+.hov {
+    font-weight: 600;
+}
+
+.hov:hover {
+    cursor: pointer;
+    color: #2c2929;
+}
+
+.options2 {
+    margin-top: 13px;
+}
+
+.plalist {
+    padding: 15px;
+    border-radius: 46px;
+    border: 1px solid #2BC5B4;
+    width: 169px;
+    background-color: transparent;
+    margin: 31px 30px 0px;
+    color: #2BC5B4;
+
+}
+
+.plalist:hover {
+    color: #1c9486;
+    border: 1px solid #1c9486;
+}
+
+/* this is a section containing music */
+
+.section {
+
+    width: 1400px;
+    height: 1000px;
+    background-color: transparent;
+    margin-top: -40px;
+
+}
+
+.container {
+    margin-top: 100px;
+    margin-left: 228px;
+    width: 83%;
+    height: 1300px;
+    /* background: #1c9486; */
+}
+
+
+.item {
+    display: flex;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    /* margin-left: 230px; */
+}
+
+
+
+.box {
+   
+    /* border: 2px solid red ; */
+    width: 130px;
+    height: 167px;
+    margin: 4px;
+    justify-content: center;
+    padding-left: 12px;
+
+}
+
+.img img {
+    width: 127px;
+    height: 127px;
+    border-radius: 8px;
+   
+}
+
+.img:hover{
+    
+    opacity: 1;
+   
+}
+
+h2 {
+    padding: 0px 12px 12px;
+    /* margin-top:100px ; */
+    margin-left: 20px;
+    color: #3e3e3e;
+    font-size: 20px;
+}
+
+.box a {
+    font-size: 13px;
+    color: #3e3e3e;
+    text-decoration: none;
+}
+
+.main {
+    text-align: center;
+    font-weight: 600;
+    font-size: 13px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.secondary {
+    text-align: center;
+    font-size: 13px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* h3{
+    margin: 15px 17px 12px;
+} */
+
+
+
+.circle a{
+    color: #3e3e3e;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+
+.circle {
+    width: 130px;
+    height: 167px;
+    margin: 4px;
+    justify-content: center;
+    padding-left: 12px;
+
+}
+
+.circle img {
+    border-radius: 50%;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+
+
+
+
+footer{
+    margin-top: 0px;
+}
+.footer {
+    height: 400px;
+    padding-left: 65px;
+    margin-top: 2px;
+    display: flex;
+}
+
+.fot-flex {
+    /* padding: 12px; */
+    width: 180px;
+    /* background-color: #2BC5B4; */
+}
+
+H6 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 33px;
+    color: #3e3e3e;
+    font-size: 11px;
+    
+}
+
+
+.fot-flex li {
+    padding: 3px;
+    padding-left: 32px;
+    list-style: none;
+    font-size: 12px;
+    color: #3e3e3ed2;
+    font-weight: 600;
+    /* font-weight: 600; */
+    
+}
+
+li{
+    cursor: pointer;
+}
+
+
+
+.divice{
+    padding-left: 250px;
+    display:flex;
+    margin-left: 9px;
+   
+}
+
+.divice-box{
+    padding: 23px 12px 35px ;
+    font-size: 13.5px;
+    color: #3e3e3e;
+    font-weight:500;
+}
+
+.copyright{
+    margin-top: 48px;
+}
+
+.follow{
+    float: right;
+    margin-right: 124px;
+}
+
+span img{
+    padding: 0px 6px 0px;
+}
+
+.logoes{
+    padding-left:460px ;
+    font-size: 12px;
+    color: #3e3e3e;
+    /* padding: 14px 14px 14px; */
+    padding-top: 14px;
+   
+   
+}
+
+.text{
+    margin-left: 250px;
+    font-size: 13px;
+   padding: 14px;
+   color: #3e3e3e;
+}
+
+
+
+
+
+
+.main a{
+    font-size: 13px;
+    color: #2c2929;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.TrendingNow{
+
+    padding: 26px 0px 0px;
+}
+.TopCharts{
+    padding: 26px 0px 0px;
+}
+
+.TrendingPodcasts{
+    padding: 26px 0px 0px ;
+}
+
+.RadioStations{
+    padding: 26px 0px 0px;
+
+}
+
+.recommendedartists{
+    padding: 26px 0px 0px;
+
+}
+
+.ReligionPodcasts{
+    padding: 26px 0px 0px;
+}
+
+
+
+
+
+.side-options {
+
+    position: fixed;
+    top: 100px;
+    overflow: hidden;
+    right: -400px;
+    width: 480px;
+    height: 550px;
+    background-color: #f0f0f0;
+    transition: right 1s ease;
+    border-radius: 12px;
+}
+
+.side-content{
+    background-color: white;
+}
+
+
+.side-header {
+    display: flex;
+    height: 50px;
+    background-color: antiquewhite;
+}
+
+
+.side-options:hover {
+    right: 0;
+    /* margin-right: 10px; */
+}
+
+.sidebtn {
+    width: 98px;
+    padding: 10px;
+    margin-top: 6px;
+    border-radius: 20px;
+    border: 1px solid rgb(160, 148, 148);
+    background-color: transparent;
+    color: #3e3e3e;
+    font-weight: 600;
+}
+
+.side-header {
+    display: flex;
+    height: 64px;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid rgba(2, 1, 1, 0.342);
+}
+
+
+.side-header{
+    display: flex;
+}
+
+.btn{
+    display: flex;
+    padding-left: 185px;
+    margin: 2px;
+    background-color: transparent;
+}
+
+
+
+
+.heding {
+    color: #898484;
+    background-color: transparent;
+    font-size:15.7px;
+   font-weight: 600;
+    padding: 23px 12px 16px;
+}
+
+
+.button{
+    background-color: transparent;
+    padding-top: 4px;
+}
+
+
+.button button{
+    background-color: transparent;
+    width: 90px;
+    padding: 12px;
+    margin: 5px;
+    border-radius: 20px;
+    border: 2px solid #2bc5b4;
+    font-weight: 600;
+}
+
+.save button{
+    background-color: #2bc5b4;
+    color: white;
+    
+}
+
+
+.clear button{
+    border: 1px solid #7b849b;
+    background-color: #ffffff;
+}
+
+.clear button:hover{
+    border: 1px solid #2bc5b4 ;
+    color: #2BC5B4;
+}
+
+.save button:hover{
+    background-color: #1c9486;
+    border: 2px solid #1c9486;
+}
+.side-music{
+    display: flex;
+    padding: 12px;
+    /* margin: 5px; */
+    background-color: #f5f1f1;
+}
+
+
+
+
+
+
+.sidemain a{
+    background-color: transparent;
+    color: #3e3e3e;
+}
+
+.sidesecondary a{
+    background-color: transparent;
+   
+}
+
+.sidesecondary a{
+    display: block;
+    color: #3e3e3e;
+    
+}
+
+ .twoline a{
+    text-decoration: none;
+ } 
+
+
+
+.side-music{
+/* padding-left: 20px; */
+/* border-radius: 20px; */
+width: 100%;
+
+}
+
+.side-music:hover{
+    background-color: #ffffff;
+}
+
+.sidemain {
+
+    padding-left: 20px;
+    background-color: transparent;
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.sidesecondary {
+    background-color: transparent;
+    text-align: center;
+    font-size: 12px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.twoline{
+    padding: 7px 20px 9px;
+    background-color: transparent;
+}
+
+.side-music img{
+    border-radius: 12px;
+}
+
+.playbutton{
+    
+    position: absolute;
+   border-radius: 10px;
+    width: 127px;
+    height: 127px;
+    background-color: rgb(0, 0, 0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease; 
+
+}
+
+.playbutton i{
+    /* font-weight: 100; */
+    color: #fff;
+    font-size: 35px;
+    background-color:transparent;
+}
+
+.img:hover .playbutton{
+    opacity: 1;
+   
+}
+
+.playbutton i:hover{
+    font-size: 48px;
+    transition-duration: 0.1s ;
+    transition-timing-function: ease-out;
+}
+
+.sideplaybutton{
+    position: absolute;
+    border-radius: 12px;
+    width: 46px;
+    height: 46px;
+    background-color: rgb(0, 0, 0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease; 
+
+}
+
+.sideplaybutton i{
+    color: #fff;
+    font-size: 35px;
+    background-color: transparent;
+    
+}
+
+.side-music:hover .sideplaybutton{
+    opacity: 1;
+}
+
+.playcircle {
+    position: absolute;
+    border-radius: 50%;
+    width: 127px;
+    height: 127px;
+    background-color: rgb(0, 0, 0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease; 
+
+   
+}
+
+.img:hover .playcircle{
+    opacity: 1;
+}
+
+.playcircle i{
+    color: #fff;
+    font-size: 35px;
+    background-color:transparent;
+}
+
+.playcircle i:hover{
+    font-size: 48px;
+    transition-duration: 0.1s ;
+    transition-timing-function: ease-out;
+}
+
+
+
+.fot-flex li:hover{
+    color: #2c2929;
+}
+
+.bottomplay{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Set your desired background color */
+    
+
+}
+
+.music-bar{
+    border-top: 2px solid #9c9090;
+    z-index: 1;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px; /* Set the desired height of the music bar */
+    background-color: #ffffff; /* Set the background color of the music bar */
+    color: #fff; /* Set the text color */
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+
+  
+  .track-details{
+    color: #3e3e3e;
+    font-size: 15px;
+    background-color:#ffffff;
+  }
+   
+  .track-details2{
+    color: #3e3e3e;
+    font-size: 12px;
+    background-color:#ffffff;
+  }
+ 
+.bottomcontent{
+   
+    padding-left: 15px;
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+  .play-button img{
+    border-radius: 6px;
+  }
+
+
+  .playlogoes{
+    background-color: transparent;
+    margin-left: 200px;
+    display: flex;
+  }
+
+  .playlogs i{
+    background-color: #ffffff;
+    padding: 13px 18px 11px;
+    color: #2c2929;
+    font-size: 28px;
+  }
+
+ 
+  .playlogs i:hover{
+   color: #7b849b;
+  }
+
+
+  .timeopt i:hover{
+    color: #2f3236;
+   }
+
+  #play-1 i{
+    color: #6666665e;
+  }
+
+  #play-5 i{
+    color: #6666665e;
+  }
+
+  #play-2 i{
+    color: #8d8d8d;
+  }
+  
+.lasttime{
+    display: flex;
+    margin-left: 360px;
+    background-color: transparent;
+}
+
+#playtime{
+    padding: 13px 12px 12px;
+    color: black;
+    font-size: 14px;
+    display: inline;
+    background-color: transparent;
+}
+  .timeopt i{
+    background-color: #ffffff;
+    font-size: 20px;
+    color:rgba(61, 61, 61, 0.884);
+    padding: 12px 12px 12px;
+    
+  }
+
+
